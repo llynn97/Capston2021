@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/dotumbold"
+        android:gravity="center"
+        android:text="※영수증 이미지 Crop 예시"
+        android:textColor="@color/main_red"></TextView>
+
+    <LinearLayout
+        android:id="@+id/receiptExample"
+        android:background="@drawable/profile_image_border"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dotummedium"
+                android:text="물 품명"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="right"
+                android:text="수량"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/dotummedium"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="right"
+                android:text="단가"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/dotummedium"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="right"
+                android:text="가격"
+                android:layout_weight="1"
+                android:fontFamily="@font/dotummedium"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_height="3px"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dotummedium"
+                android:text="손질대파(팩) "
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="right"
+                android:text="1"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/dotummedium"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="right"
+                android:text="1500"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/dotummedium"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="right"
+                android:text="1500"
+                android:layout_weight="1"
+                android:fontFamily="@font/dotummedium"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dotummedium"
+                android:text="노브랜드 커피"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="right"
+                android:text="1"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/dotummedium"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="right"
+                android:text="1980"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/dotummedium"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="right"
+                android:text="1980"
+                android:layout_weight="1"
+                android:fontFamily="@font/dotummedium"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dotummedium"
+                android:text="맛있는콩나물"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="right"
+                android:text="1"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/dotummedium"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="right"
+                android:text="2500"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/dotummedium"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="right"
+                android:text="2500"
+                android:layout_weight="1"
+                android:fontFamily="@font/dotummedium"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/galleryGetButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rectangle_round"
+        android:fontFamily="@font/dotummedium"
+        android:text="갤러리에서 가져오기"
+        android:textColor="#5B8AFF" />
+
+    <ImageView
+        android:id="@+id/galleryReceipt"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:src="@drawable/profile_image_border"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/galleryCompleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rectangle_round"
+        android:fontFamily="@font/dotummedium"
+        android:text="완료"
+        android:textColor="#5B8AFF" />
+</LinearLayout>

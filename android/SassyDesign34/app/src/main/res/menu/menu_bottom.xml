@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/goToBetReceipt"
+        android:enabled="true"
+        android:icon="@drawable/bet_icon"
+        android:title="내기 가계부"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/goToHome"
+        android:enabled="true"
+        android:icon="@drawable/home_icon"
+        android:title="홈"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/goToSettings"
+        android:enabled="true"
+        android:icon="@drawable/settings_icon"
+        android:title="설정"
+        app:showAsAction="ifRoom" />
+
+</menu>

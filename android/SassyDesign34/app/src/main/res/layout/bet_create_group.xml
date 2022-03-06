@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/makeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/dotumbold"
+        android:gravity="center"
+        android:text="그룹 만들기"
+        android:textColor="#FF719AFF"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/betCreateGroupName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:fontFamily="@font/dotummedium"
+        android:hint="그룹명"
+        android:inputType="text"
+        android:textColorHint="#C4D6FF"
+        android:backgroundTint="#FF719AFF"/>
+
+    <EditText
+        android:id="@+id/betCreateGroupGoal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:fontFamily="@font/dotummedium"
+        android:hint="목표 설정"
+        android:inputType="text"
+        android:textColorHint="#C4D6FF"
+        android:backgroundTint="#FF719AFF"/>
+
+    <EditText
+        android:id="@+id/betCreateGroupMoney"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:fontFamily="@font/dotummedium"
+        android:hint="목표 금액 설정"
+        android:inputType="number"
+        android:textColorHint="#C4D6FF"
+        android:backgroundTint="#FF719AFF"/>
+
+    <EditText
+        android:id="@+id/betCreateGroupReward"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:fontFamily="@font/dotummedium"
+        android:hint="보상 설정"
+        android:inputType="text"
+        android:textColorHint="#C4D6FF"
+        android:backgroundTint="#FF719AFF"/>
+
+    <EditText
+        android:id="@+id/betCreateGroupPenalty"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:fontFamily="@font/dotummedium"
+        android:hint="벌칙 설정"
+        android:inputType="text"
+        android:textColorHint="#C4D6FF"
+        android:backgroundTint="#FF719AFF"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/dateSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/dotummedium"
+            android:gravity="center"
+            android:text="기간 설정"
+            android:textColor="#719AFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/betCreateFromDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_round"
+            android:fontFamily="@font/dotummedium"
+            android:text="시작 일자"
+            android:textColor="#5B8AFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="~"
+            android:textColor="#719AFF"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/betCreateToDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_round"
+            android:fontFamily="@font/dotummedium"
+            android:text="종료 일자"
+            android:textColor="#5B8AFF" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/betCreateSharedSpinner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/category"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        />
+
+    <Button
+        android:id="@+id/createInviteCode"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/rectangle_round"
+        android:fontFamily="@font/dotummedium"
+        android:text="초대코드 생성"
+        android:textColor="#5B8AFF"></Button>
+
+
+    <Button
+        android:id="@+id/betCreateCompleteButton"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_round"
+        android:fontFamily="@font/dotummedium"
+        android:text="완료"
+        android:textColor="#5B8AFF" />
+
+
+</LinearLayout>

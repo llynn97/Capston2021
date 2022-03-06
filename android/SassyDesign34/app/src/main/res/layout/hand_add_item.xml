@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="#FFFFFFFF"
+        android:maxWidth="25dp"
+        android:maxHeight="25dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/minus"
+
+        />
+
+    <EditText
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/dotummedium"
+        android:backgroundTint="#5B8AFF"
+        android:hint="상품명"
+        android:textColorHint="#C4D6FF"
+        android:inputType="text"
+        android:maxLength="11" />
+
+    <EditText
+        android:id="@+id/productCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="금액"
+        android:fontFamily="@font/dotummedium"
+        android:textColorHint="#C4D6FF"
+        android:backgroundTint="#5B8AFF"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/productQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="수량"
+        android:fontFamily="@font/dotummedium"
+        android:textColorHint="#C4D6FF"
+        android:backgroundTint="#5B8AFF"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@font/dotummedium"
+        android:entries="@array/category" />
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/receiptItemDetailAddButton"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <lib.kingja.switchbutton.SwitchMultiButton
+                android:id="@+id/switchInOutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:padding="8dp"
+                app:selectedColor="@color/main_blue"
+                app:selectedTab="0"
+                app:strokeRadius="5dp"
+                app:strokeWidth="1dp"
+                app:switchTabs="@array/switch_in_out"
+                app:textSize="14sp"
+                tools:layout_weight="1" />
+
+            <lib.kingja.switchbutton.SwitchMultiButton
+                android:id="@+id/switchCCButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:padding="8dp"
+                app:selectedColor="@color/main_blue"
+                app:selectedTab="0"
+                app:strokeRadius="5dp"
+                app:strokeWidth="1dp"
+                app:switchTabs="@array/switch_cc"
+                app:textSize="14sp"
+                tools:layout_weight="1" />
+
+            <Button
+                android:id="@+id/receiptDateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="◀ 3월 10일 ▶"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/dotummedium"
+                tools:layout_marginLeft="20dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/receiptItemDetailTitle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="제목"
+            android:textColorHint="#C4D6FF"
+            android:fontFamily="@font/dotummedium"
+            android:backgroundTint="#FF719AFF"
+            android:inputType="textPersonName" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/receiptAddRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/receiptItemDetailAddButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/receiptCompleteButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round"
+        android:foregroundTint="#5B8AFF"
+        android:foreground="@drawable/ic_baseline_add_24"/>
+
+    <Button
+        android:id="@+id/receiptCompleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|center|right"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/dotummedium"
+        android:background="@drawable/rectangle_round"
+        android:textColor="#5B8AFF"
+        android:text="완료" />
+
+</RelativeLayout>

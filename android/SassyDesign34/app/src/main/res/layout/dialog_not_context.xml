@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="제목제목제목제목제목제목"
+        android:fontFamily="@font/dotumbold"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/dialog_button"
+        android:layout_gravity="right"
+        android:gravity="right|bottom"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:fontFamily="@font/dotummedium"
+        android:textColor="#5B8AFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="확인">
+
+    </Button>
+</LinearLayout>

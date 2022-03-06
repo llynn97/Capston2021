@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "922274874497",
+    "project_id": "storage-2ccab",
+    "storage_bucket": "storage-2ccab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922274874497:android:b3fb228eeb9cbd2d133980",
+        "android_client_info": {
+          "package_name": "com.example.sassydesign"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "922274874497-c05gutm11qhohdet02l9oss7dhmbdedc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsFGqVvLgzDG1O6J27vP8D4QZjYB04xu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "922274874497-c05gutm11qhohdet02l9oss7dhmbdedc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

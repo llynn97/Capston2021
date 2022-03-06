@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="switch_in_out">
+        <item>수입</item>
+        <item>지출</item>
+    </string-array>
+
+    <string-array name="switch_cc">
+        <item>카드</item>
+        <item>현금</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>카테고리</item>
+        <item>식비</item>
+        <item>문화생활</item>
+        <item>패션/미용</item>
+        <item>수입</item>
+        <item>교육</item>
+        <item>교통/차량</item>
+        <item>마트/편의점</item>
+        <item>건강</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="year">
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+    </string-array>
+
+
+</resources>
