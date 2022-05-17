@@ -2,7 +2,7 @@ var express = require("express"),
   http = require("http"),
   path = require("path");
 
-//Express의 미들웨어 불러오기
+// Express의 미들웨어 불러오기
 var bodyParser = require("body-parser"),
   cookieParser = require("cookie-parser"),
   static = require("serve-static"),
@@ -13,7 +13,7 @@ var expressErrorHandler = require("express-error-handler");
 // Session 미들웨어 불러오기
 var expressSession = require("express-session");
 
-//Passport 사용
+// Passport 사용
 var passport = require("passport");
 var flash = require("connect-flash");
 
@@ -47,7 +47,7 @@ app.use(
   })
 );
 
-//라우팅 정보를 읽어서 라우팅 설정
+// 라우팅 정보를 읽어서 라우팅 설정
 var router = express.Router();
 route_loader.init(app, router);
 
@@ -69,6 +69,6 @@ app.on("close", function () {
 var server = http.createServer(app).listen(app.get("port"), function () {
   console.log("서버가 시작되었습니다. 포트 : " + app.get("port"));
 
-  // 데이터베이스 초기화s
+ // 데이터베이스 초기화
   database.init(app, config);
 });

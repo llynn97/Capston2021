@@ -1,7 +1,6 @@
 var _ = require("lodash");
 
 var additemlist = function (req, res) {
-  console.log("itemlist모듈에 additemlist 함수 호출함");
   var title = req.body.title || req.query.title;
   var itemname = req.body.itemname || req.query.itemname;
   var price = req.body.price || req.query.price;
@@ -37,8 +36,6 @@ var additemlist = function (req, res) {
       res.end();
       return;
     }
-    console.log(id + "에 itemlist추가함");
-    console.dir(itemlist);
     res.writeHead("200", { "Content-Type": "application/json;charset=utf8" });
     var message = { success: true };
     res.write(JSON.stringify(message));
@@ -47,22 +44,17 @@ var additemlist = function (req, res) {
 };
 
 var deleteitem = function (req, res) {
-  // id, title,  year, month,date -> array->add
-  console.log("itemlist모듈에 deleteitem 함수 호출함");
   var _id = req.body._id || req.query._id;
   var num = _id;
   var database = req.app.get("database");
-  console.log(num + "가 지워짐");
   database.ItemListModel.remove({ _id: _id }, function (err) {
     if (err) {
-      console.log(num + "가 잘못 지워짐");
       res.writeHead("200", { "Content-Type": "application/json;charset=utf8" });
       var message = { success: false };
       res.write(JSON.stringify(message));
       res.end();
       return;
     }
-    console.log(num + "가 지워짐");
     res.writeHead("200", { "Content-Type": "application/json;charset=utf8" });
     var message = { success: true };
     res.write(JSON.stringify(message));
@@ -72,8 +64,6 @@ var deleteitem = function (req, res) {
 };
 
 var deleteitemlist = function (req, res) {
-  // 제목에 해당하는거 다 삭제
-  console.log("itemlist모듈에 deleteitemlist 함수 호출함");
   var id = req.body.id || req.query.id;
   var title = req.body.title || req.query.title;
   var year = req.body.year || req.query.year;
@@ -101,13 +91,7 @@ var deleteitemlist = function (req, res) {
   );
 };
 
-var distinctitemlist = function (req, res) {
-  var title = req.body.title || req.query.title;
-  database.ItemListModel.memeber.distinct("title");
-};
-
 var showitemlist = function (req, res) {
-  console.log("itemlist모듈에 showitemlist함수 호출함");
   var id = req.params.id;
   var year = req.params.year;
   var month = req.params.month;
@@ -117,7 +101,6 @@ var showitemlist = function (req, res) {
     { id: id, year: year, month: month, date: date },
     function (err, results) {
       if (err) {
-        console.log(err);
         return res.end(err);
       }
       if (results.length > 0) {
@@ -136,7 +119,6 @@ var showitemlist = function (req, res) {
 };
 
 var modifyitemlist = function (req, res) {
-  console.log("itemlist모듈에 modifyitemlist함수 호출함");
   var title = req.body.title || req.query.title;
   var itemname = req.body.itemname || req.query.itemname;
   var price = req.body.price || req.query.price;
@@ -153,7 +135,6 @@ var modifyitemlist = function (req, res) {
   var num = _id;
   var database = req.app.get("database");
   if (num == "1") {
-    console.log(num + "들어가졌니..?");
     var itemlist = new database.ItemListModel({
       title: title,
       itemname: itemname,
@@ -178,7 +159,6 @@ var modifyitemlist = function (req, res) {
         res.end();
         return;
       }
-      console.log(id + "에 itemlist추가함");
       console.dir(itemlist);
       res.writeHead("200", { "Content-Type": "application/json;charset=utf8" });
       var message = { success: true };
@@ -226,7 +206,6 @@ var modifyitemlist = function (req, res) {
       }
     );
   }
-  // database.ItemListModel.update({id:id,ENGLISH:ENGLISH},$set:{'MEMO':MEMO});
 };
 
 module.exports.additemlist = additemlist;

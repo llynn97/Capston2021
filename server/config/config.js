@@ -77,46 +77,104 @@ module.exports = {
       method: "modifyitemlist",
       type: "post",
     },
+
+    {
+      file: "./betcashbook",
+      path: "/process/groupvalidate",
+      method: "groupvalidate",
+      type: "post",
+    },
     {
       file: "./betcashbook",
       path: "/process/addbetcashbook",
       method: "addbetcashbook",
       type: "post",
     },
-      {
-      file: "./betcashbook",
-      path: "/process/randomcodecheck",
-      method: "randomcodecheck",
-      type: "post",
-    },
-      {
+
+    {
       file: "./betcashbook",
       path: "/process/showbetcashbook/:id",
       method: "showbetcashbook",
       type: "get",
     },
-      {
+    {
       file: "./betcashbook",
       path: "/process/showdetailbetcashbook/:inviteCode",
       method: "showdetailbetcashbook",
       type: "get",
     },
-        {
+    {
       file: "./betcashbook",
-      path: "/process/deletebetcashbook/:id",
+      path: "/process/deletebetcashbook",
       method: "deletebetcashbook",
       type: "post",
     },
-      {
+    {
       file: "./betcashbook",
       path: "/process/invitebetcashbook",
       method: "invitebetcashbook",
       type: "post",
     },
-      {
+
+    {
+      file: "./betcashbook",
+      path: "/process/idarraycheck",
+      method: "idarraycheck",
+      type: "post",
+    },
+    {
       file: "./category",
       path: "/process/addcategory",
       method: "addcategory",
+      type: "post",
+    },
+    {
+      file: "./member",
+      path: "/process/findmemberlist",
+      method: "findmemberlist",
+      type: "post",
+    },
+    {
+      file: "./yearly",
+      path: "/process/monthcheck",
+      method: "monthcheck",
+      type: "post",
+    },
+
+    {
+      file: "./monthly",
+      path: "/process/monthmoneyminus",
+      method: "monthmoneyminus",
+      type: "post",
+    },
+    {
+      file: "./monthly",
+      path: "/process/daymoneyminusplus",
+      method: "daymoneyminusplus",
+      type: "post",
+    },
+    {
+      file: "./monthly",
+      path: "/process/getbudget",
+      method: "getbudget",
+      type: "post",
+    },
+    {
+      file: "./setting",
+      path: "/process/setbudget",
+      method: "setbudget",
+      type: "post",
+    },
+    {
+      file: "./setting",
+      path: "/process/deleteuser",
+      method: "deleteuser",
+      type: "post",
+    },
+    {
+      file: "./setting",
+      path: "/process/setphoto",
+      method: "setphoto",
       type: "post",
     },
   ],
